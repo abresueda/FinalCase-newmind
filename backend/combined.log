@@ -1,0 +1,93 @@
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T01:46:09.961Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T01:46:11.673Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T01:48:48.710Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T01:48:50.230Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T15:15:43.153Z"}
+{"error":"","level":"error","message":"Redis connection error","timestamp":"2024-12-13T15:15:43.155Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T15:17:10.153Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-13T15:17:10.155Z"}
+{"error":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","level":"error","message":"MongoDB connection error","timestamp":"2024-12-13T15:17:40.255Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T15:30:46.042Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-13T15:30:46.044Z"}
+{"error":"Operation `users.insertOne()` buffering timed out after 10000ms","level":"error","message":"Error creating user","timestamp":"2024-12-13T15:31:09.334Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-13T15:31:09.334Z"}
+{"error":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","level":"error","message":"MongoDB connection error","timestamp":"2024-12-13T15:31:16.088Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T21:33:23.726Z"}
+{"error":"getaddrinfo ENOTFOUND redis","level":"error","message":"Redis connection error","timestamp":"2024-12-13T21:33:23.739Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T21:51:01.050Z"}
+{"error":"getaddrinfo ENOTFOUND redis","level":"error","message":"Redis connection error","timestamp":"2024-12-13T21:51:01.060Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T21:55:23.037Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T21:55:24.589Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T21:56:25.012Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T21:56:26.416Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T21:56:27.783Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T21:56:29.153Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T21:56:38.638Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T21:56:40.025Z"}
+{"level":"info","message":"User created: abre11 (abre.sueda@gmail.com)","timestamp":"2024-12-13T21:56:58.484Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-13T21:56:58.485Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:09:01.220Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:09:02.874Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:09:05.872Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:09:07.210Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:09:09.565Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:09:10.915Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:10:58.517Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:11:00.086Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:11:04.977Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:11:06.329Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:11:14.885Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:11:16.267Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:11:20.724Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:11:22.084Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:11:22.678Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:11:24.050Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:12:28.633Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:12:30.131Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:25:29.057Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:25:30.731Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:25:32.598Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:25:33.930Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:25:38.209Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:25:39.545Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:25:40.478Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:25:41.808Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:25:56.867Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:25:58.216Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:05.292Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:26:06.660Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:10.444Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:26:11.820Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:14.184Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:26:15.556Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:19.200Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:26:20.556Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:22.243Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:23.694Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:24.932Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:29.592Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:26:30.954Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:26:35.681Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:26:37.250Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:28:36.725Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:28:38.411Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:42:50.180Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-13T22:42:50.182Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:42:51.688Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:42:52.822Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-13T22:42:52.824Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:42:54.200Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:43:04.771Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-13T22:43:04.773Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:43:06.123Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:45:08.646Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-13T22:45:08.648Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:45:10.193Z"}
+{"error":"E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"abre.sueda@gmail.com\" }","level":"error","message":"Error creating user","timestamp":"2024-12-13T22:51:57.204Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-13T22:51:57.205Z"}
+{"error":"E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"abre.sueda@gmail.com\" }","level":"error","message":"Error creating user","timestamp":"2024-12-13T22:52:17.302Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-13T22:52:17.302Z"}
+{"level":"info","message":"User created: abresuedaozmen (abre.suedaozmen@gmail.com)","timestamp":"2024-12-13T22:52:36.068Z"}
+{"email":"abre.suedaozmen@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-13T22:52:36.069Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-13T22:52:49.385Z"}
+{"level":"info","message":"Product created successfully","name":"şapka","response":false,"timestamp":"2024-12-13T22:52:49.386Z"}
