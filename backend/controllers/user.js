@@ -2,78 +2,100 @@ const userService = require("../services/user");
 const kafka = require("../utils/kafka");
 const logger = require("../utils/logger");
 
-const handleControllerAction = async (
-  res,
-  action,
-  successMessage,
-  errorMessage,
-  logData = {}
-) => {
-  try {
-    const response = await action();
-    logger.info(successMessage, { ...logData, response });
-    res.status(200).send({ response });
-  } catch (error) {
-    logger.error(errorMessage, {
-      error: error.message,
-      stack: error.stack,
-      ...logData,
-    });
-    res.status(500).send({ message: errorMessage });
-  }
-};
-
 const userController = {
-  updateUser: (req, res) => {
-    handleControllerAction(
-      res,
-      () => userService.updateUser(req.body),
-      "User updated successfully",
-      "Error updating user",
-      { userId: req.body.id }
-    );
+  getUser: async (req, res) => {
+    try {
+      const response = await userService.getUser(req.params);
+      logger.info("User fetched successfully", {
+        params: req.params,
+        response,
+      });
+      res.status(200).send({ response });
+    } catch (e) {
+      logger.error("Error fetching user", {
+        error: e.message,
+        stack: e.stack,
+        params: req.params,
+      });
+      res
+        .status(500)
+        .send({ message: "An error occurred while fetching the user" });
+    }
   },
 
-  deleteUser: (req, res) => {
-    handleControllerAction(
-      res,
-      () => userService.deleteUser(req.params),
-      "User deleted successfully",
-      "Error deleting user",
-      { userId: req.params.id }
-    );
+  getAllUser: async (req, res) => {
+    try {
+      const response = await userService.getAllUser();
+      logger.info("Users fetched successfully", { response });
+      res.status(200).send({ response });
+    } catch (e) {
+      logger.error("Error fetching users", {
+        error: e.message,
+        stack: e.stack,
+      });
+      res
+        .status(500)
+        .send({ message: "An error occurred while fetching the users" });
+    }
+  },
+  
+  updateUser: async (req, res) => {
+    try {
+      const response = await userService.updateUser(req.body);
+      logger.info("User updated successfully", {
+        requestBody: req.body,
+        response,
+      });
+      res.status(200).send({ response });
+    } catch (e) {
+      logger.error("Error updating user", {
+        error: e.message,
+        stack: e.stack,
+        requestBody: req.body,
+      });
+      res
+        .status(500)
+        .send({ message: "An error occurred while updating the user" });
+    }
   },
 
-  getUser: (req, res) => {
-    handleControllerAction(
-      res,
-      () => userService.getUser(req.params),
-      "User retrieved successfully",
-      "Error retrieving user",
-      { userId: req.params.id }
-    );
+  deleteUser: async (req, res) => {
+    try {
+      const response = await userService.deleteUser(req.params);
+      logger.info("User deleted successfully", {
+        params: req.params,
+        response,
+      });
+      res.status(200).send({ response });
+    } catch (e) {
+      logger.error("Error deleting user", {
+        error: e.message,
+        stack: e.stack,
+        params: req.params,
+      });
+      res
+        .status(500)
+        .send({ message: "An error occurred while deleting the user" });
+    }
   },
 
-  getAllUser: (req, res) => {
-    handleControllerAction(
-      res,
-      () => userService.getAllUser(),
-      "Users retrieved successfully",
-      "Error retrieving users"
-    );
-  },
-
-  createOrder: (req, res) => {
-    handleControllerAction(
-      res,
-      () => {
-        kafka.sendMessage("test2", "test3");
-        return Promise.resolve(); // Simulate a successful Kafka operation
-      },
-      "Kafka message sent",
-      "Error creating order",
-      { topic: "test2", message: "test3" }
-    );
+  createOrder: async (req, res) => {
+    try {
+      kafka.sendMessage("test2", "test3");
+      logger.info("Kafka message sent successfully", {
+        topic: "test2",
+        message: "test3",
+      });
+      res.status(200).send({ response: [] });
+    } catch (e) {
+      logger.error("Error creating order", {
+        error: e.message,
+        stack: e.stack,
+      });
+      res
+        .status(500)
+        .send({ message: "An error occurred while creating the order" });
+    }
   },
 };
 

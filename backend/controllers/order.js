@@ -11,18 +11,8 @@ const validateRequest = (requiredFields, body) => {
   return null;
 };
 
-// Hata sarmalayıcı: Tekrar eden try-catch yapısını azaltır
-const controllerHandler = (controllerFunction) => async (req, res) => {
-  try {
-    await controllerFunction(req, res);
-  } catch (error) {
-    logger.error("Controller Error", { error: error.message });
-    res.status(500).send({ message: "Internal Server Error" });
-  }
-};
-
 const orderController = {
-  createOrder: controllerHandler(async (req, res) => {
+  createOrder: async (req, res) => {
     const { userId, products } = req.body;
 
     // Parametre doğrulama
@@ -32,12 +22,20 @@ const orderController = {
       return res.status(400).send({ message: validationError });
     }
 
-    const response = await orderService.createOrder(req.body);
-    logger.info("Order created successfully", { userId, response });
-    res.status(201).send({ response });
-  }),
+  
+    try {
+      const response = await orderService.createOrder(req.body);
+      logger.info("Order created successfully", { userId });
+      res.status(201).send({ response });
+    } catch (error) {
+      logger.error("Error creating order", { userId, error: error.message });
+      res.status(500).send({
+        message: "An unexpected error occurred. Please try again later.",
+      });
+    }
+  },
 
-  updateOrder: controllerHandler(async (req, res) => {
+  updateOrder: async (req, res) => {
     const { userId, products } = req.body;
 
     const validationError = validateRequest(["userId", "products"], req.body);
@@ -46,12 +44,17 @@ const orderController = {
       return res.status(400).send({ message: validationError });
     }
 
-    const response = await orderService.updateOrder(req.body);
-    logger.info("Order updated successfully", { userId, response });
-    res.status(200).send({ response });
-  }),
+    try {
+      const response = await orderService.updateOrder(req.body);
+      logger.info("Order updated successfully", { userId });
+      res.status(200).send({ response });
+    } catch (error) {
+      logger.error("Error updating order", { userId, error: error.message });
+      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+    }
+  },
 
-  deleteOrder: controllerHandler(async (req, res) => {
+  deleteOrder: async (req, res) => {
     const { id } = req.body;
 
     const validationError = validateRequest(["id"], req.body);
@@ -60,18 +63,28 @@ const orderController = {
       return res.status(400).send({ message: validationError });
     }
 
-    const response = await orderService.deleteOrder(id);
-    logger.info("Order deleted successfully", { id, response });
-    res.status(200).send({ response });
-  }),
+    try {
+      const response = await orderService.deleteOrder(id);
+      logger.info("Order deleted successfully", { id });
+      res.status(200).send({ response });
+    } catch (error) {
+      logger.error("Error deleting order", { id, error: error.message });
+      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+    }
+  },
 
-  getAllOrder: controllerHandler(async (req, res) => {
-    const response = await orderService.getAllOrder();
-    logger.info("Fetched all orders successfully");
-    res.status(200).send({ response });
-  }),
+  getAllOrder: async (req, res) => {
+    try {
+      const response = await orderService.getAllOrder();
+      logger.info("Fetched all orders successfully");
+      res.status(200).send({ response });
+    } catch (error) {
+      logger.error("Error fetching all orders", { error: error.message });
+      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+    }
+  },
 
-  getSingleOrder: controllerHandler(async (req, res) => {
+  getSingleOrder: async (req, res) => {
     const { id } = req.body;
 
     const validationError = validateRequest(["id"], req.body);
@@ -80,10 +93,15 @@ const orderController = {
       return res.status(400).send({ message: validationError });
     }
 
-    const response = await orderService.getSingleOrder(id);
-    logger.info("Fetched single order successfully", { id, response });
-    res.status(200).send({ response });
-  }),
+    try {
+      const response = await orderService.getSingleOrder(id);
+      logger.info("Fetched single order successfully", { id });
+      res.status(200).send({ response });
+    } catch (error) {
+      logger.error("Error fetching single order", { id, error: error.message });
+      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+    }
+  },
 };
 
 module.exports = orderController;

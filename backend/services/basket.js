@@ -2,7 +2,7 @@ const logger = require("../utils/logger");
 const { createClient } = require("redis");
 const redis = require("../utils/redis");
 
-/*let redisClient;
+let redisClient;
 
 async function createRedisClient() {
   if (!redisClient) {
@@ -11,7 +11,7 @@ async function createRedisClient() {
       .connect();
   }
   return redisClient;
-}*/
+}
 
 async function addToCart(params) {
   const { userId, product } = params;

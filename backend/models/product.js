@@ -5,7 +5,6 @@ const productSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true, // İsim zorunlu
       trim: true, // Boşlukları kırpar
     },
     price: {
@@ -25,7 +24,7 @@ const productSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true, // Oluşturulma ve güncellenme tarihlerini otomatik ekler
+    strict: true
   }
 );
 

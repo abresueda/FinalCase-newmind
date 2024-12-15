@@ -51,8 +51,8 @@ async function login(userParams) {
 
     // Başarılı giriş logu
     logger.info(`Successful login for email: ${email}`);
+    return { status: 200, message: "Login successful", token };
 
-    return { token };
   } catch (e) {
     if (e instanceof UserNotFoundError || e instanceof InvalidPasswordError) {
       return { status: e.statusCode, message: e.message };
@@ -61,7 +61,7 @@ async function login(userParams) {
     logger.error(
       `Error during login attempt for email: ${email} - ${e.message}`
     );
-    return { status: 500, message: "An error occurred during login" };
+    throw new Error("An error occurred during login");
   }
 }
 

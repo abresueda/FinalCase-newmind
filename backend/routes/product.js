@@ -9,4 +9,6 @@ router.delete("/:id", productController.deleteProduct);
 router.get("/", productController.getAllProduct);
 router.get("/:id", productController.getSingleProduct);
 
+router.get("/search/:text", productController.searchProduct);
+
 module.exports = router;

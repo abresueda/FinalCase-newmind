@@ -91,3 +91,504 @@
 {"email":"abre.suedaozmen@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-13T22:52:36.069Z"}
 {"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-13T22:52:49.385Z"}
 {"level":"info","message":"Product created successfully","name":"şapka","response":false,"timestamp":"2024-12-13T22:52:49.386Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T22:58:02.228Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-13T22:58:02.230Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-13T22:58:03.795Z"}
+{"level":"info","message":"Successful login for email: abre.sueda@gmail.com","timestamp":"2024-12-13T22:58:11.804Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-13T22:58:11.805Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-13T22:58:45.445Z"}
+{"level":"info","message":"Product created successfully","name":"şapka","response":false,"timestamp":"2024-12-13T22:58:45.445Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:03:48.623Z"}
+{"error":"","level":"error","message":"Redis connection error","timestamp":"2024-12-14T15:03:48.625Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:04:23.142Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:04:23.144Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:04:24.758Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-14T15:04:37.474Z"}
+{"level":"info","message":"Product created successfully","name":"şapka","response":false,"timestamp":"2024-12-14T15:04:38.777Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:06:46.140Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:06:46.142Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:06:47.684Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:08:19.340Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:08:19.342Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:08:20.873Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:08:43.600Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:08:43.602Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:08:44.907Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:09:06.844Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:09:06.846Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:09:08.160Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:09:12.630Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:09:12.632Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:09:13.958Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:09:45.877Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:09:45.879Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:09:47.395Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:09:51.323Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:09:51.325Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:09:52.648Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:09:54.587Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:09:54.589Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:09:55.919Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:10:32.673Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:10:32.675Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:10:33.984Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:10:34.445Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:10:34.448Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:10:35.772Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:10:39.391Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:10:39.393Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:10:40.714Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:10:51.423Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:10:51.425Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:10:52.797Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:11:03.090Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:11:03.092Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:11:04.628Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:11:04.630Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:11:06.179Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:11:06.181Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:11:07.503Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-14T15:11:13.549Z"}
+{"level":"info","message":"Product created successfully","name":"şapka","response":false,"timestamp":"2024-12-14T15:11:14.634Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-14T15:11:58.376Z"}
+{"level":"info","message":"Product created successfully","name":"koltuk","response":false,"timestamp":"2024-12-14T15:11:58.720Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-14T15:12:09.704Z"}
+{"level":"info","message":"Product created successfully","name":"koltuk","response":false,"timestamp":"2024-12-14T15:12:10.044Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:13:16.354Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:13:16.356Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:13:17.837Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:13:18.799Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:13:18.801Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:13:20.111Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:13:36.654Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:13:36.656Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:13:37.992Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:13:42.639Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:13:42.641Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:13:43.938Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:13:47.924Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:13:47.926Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:13:49.233Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:13:55.866Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:13:55.868Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:13:57.192Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:13:58.056Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:13:58.058Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:13:59.386Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-14T15:14:17.100Z"}
+{"level":"info","message":"Product created successfully","name":"koltuk","response":false,"timestamp":"2024-12-14T15:14:18.258Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:16:02.279Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:16:02.281Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:16:03.784Z"}
+{"level":"info","message":"Product created successfully","productId":"675da149b1e836750eb46f04","timestamp":"2024-12-14T15:16:25.238Z"}
+{"level":"info","message":"Product created successfully","name":"koltuk","response":true,"timestamp":"2024-12-14T15:16:26.251Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:19:05.673Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:19:05.675Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:19:07.179Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:19:08.261Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:19:08.263Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:19:09.590Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:21:54.089Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:21:54.092Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:21:55.577Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:21:58.408Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:21:58.410Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:21:59.709Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:22:00.593Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:22:00.596Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:22:01.937Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:22:13.698Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:22:13.701Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:22:15.000Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:22:59.582Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:22:59.585Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:23:00.927Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:23:01.900Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:23:01.902Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:23:03.244Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:27:49.480Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:27:49.482Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:27:51.163Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:27:56.398Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:27:56.401Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:27:57.756Z"}
+{"level":"info","message":"Product created successfully","productId":"675da418c29b57e48c8fd7f6","timestamp":"2024-12-14T15:28:24.946Z"}
+{"level":"info","message":"Product created successfully","name":"t-shirt","response":true,"timestamp":"2024-12-14T15:28:25.965Z"}
+{"level":"info","message":"Product updated successfully","productId":"675da149b1e836750eb46f04","timestamp":"2024-12-14T15:32:34.205Z"}
+{"level":"info","message":"Product updated successfully","name":"koltuk","response":{"__v":0,"_id":"675da149b1e836750eb46f04","color":"mavi","createdAt":"2024-12-14T15:16:25.096Z","price":200,"stock":20,"updatedAt":"2024-12-14T15:16:25.096Z"},"timestamp":"2024-12-14T15:32:34.207Z"}
+{"level":"info","message":"Fetched all products from database and cached","productsCount":2,"timestamp":"2024-12-14T15:33:24.953Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-14T15:33:24.954Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:33:58.011Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:33:58.013Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:33:59.519Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-14T15:34:05.414Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-14T15:34:05.414Z"}
+{"error":"Product validation failed: name: Path `name` is required.","level":"error","message":"Error creating product","stack":"ValidationError: Product validation failed: name: Path `name` is required.\n    at Document.invalidate (/Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3318:32)\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/document.js:3079:17\n    at /Users/abresuedaozmen/FinalCase-newmind/backend/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-12-14T15:34:52.954Z"}
+{"level":"info","message":"Product created successfully","name":"bag","response":false,"timestamp":"2024-12-14T15:34:54.008Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:49:55.594Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:49:55.597Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:49:57.199Z"}
+{"level":"warn","message":"Missing required fields: id","timestamp":"2024-12-14T15:55:13.823Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:55:47.742Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:55:47.744Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:55:49.251Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:55:59.307Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:55:59.309Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:56:00.625Z"}
+{"level":"warn","message":"Missing required fields: text","timestamp":"2024-12-14T15:56:39.924Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:59:02.714Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:59:02.716Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:59:04.316Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:59:27.619Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:59:27.621Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:59:28.933Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:59:34.219Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:59:34.221Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:59:35.587Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T15:59:58.347Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T15:59:58.350Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T15:59:59.673Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:01:13.694Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:01:13.696Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:01:15.215Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:01:16.411Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:01:16.413Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:01:17.710Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:01:20.047Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:01:20.049Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:01:21.379Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:01:22.174Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:01:22.176Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:01:23.526Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:01:25.509Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:01:25.512Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:01:26.829Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:01:27.458Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:01:27.460Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:01:28.780Z"}
+{"level":"warn","message":"Missing required fields: text","timestamp":"2024-12-14T16:01:38.302Z"}
+{"level":"warn","message":"Missing required fields: text","timestamp":"2024-12-14T16:01:47.967Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:04:31.601Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:04:31.603Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:04:33.101Z"}
+{"error":"id is not defined","level":"error","message":"Controller Error","timestamp":"2024-12-14T16:04:39.533Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:05:53.674Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:05:53.676Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:05:55.099Z"}
+{"error":"id is not defined","level":"error","message":"Controller Error","timestamp":"2024-12-14T16:06:02.180Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:12:04.003Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:12:04.005Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:12:05.461Z"}
+{"level":"info","message":"Fetched single product successfully","response":[],"timestamp":"2024-12-14T16:12:14.466Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:13:47.489Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:13:47.491Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:13:49.105Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:14:15.343Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:14:15.345Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:14:16.640Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:15:21.045Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:15:21.047Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:15:22.580Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:15:29.983Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:15:29.985Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:15:31.321Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:15:35.101Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:15:35.103Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:15:36.382Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:15:36.384Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:15:37.713Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:16:31.304Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:16:31.307Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:16:32.652Z"}
+{"level":"info","message":"Fetched products successfully","response":[{"color":"siyah","name":"koltuk","price":20,"stock":20},{"color":"siyah","name":"koltuk","price":"20","stock":"20"},{"color":"siyah","name":"koltuk","price":"20","stock":"20"},{"color":"siyah","name":"koltuk","price":20,"stock":20}],"timestamp":"2024-12-14T16:17:05.997Z"}
+{"level":"info","message":"Fetched products successfully","response":[{"color":"siyah","name":"şapka","price":20,"stock":20},{"color":"siyah","name":"şapka","price":20,"stock":20}],"timestamp":"2024-12-14T16:17:21.228Z"}
+{"level":"info","message":"Fetched products successfully","response":[],"timestamp":"2024-12-14T16:17:29.124Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:19:07.461Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:19:07.463Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:19:09.039Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:19:12.546Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:19:12.549Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:19:13.857Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:19:20.114Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:19:20.116Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:19:21.439Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:19:29.696Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:19:29.699Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:19:30.992Z"}
+{"level":"info","message":"No products found for the search term","searchTerm":"tshirt","timestamp":"2024-12-14T16:19:55.690Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:20:09.760Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:20:09.762Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:20:11.132Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:20:16.924Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:20:16.926Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:20:18.234Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:20:23.441Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:20:23.444Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:20:24.758Z"}
+{"level":"info","message":"No products found for the search term","searchTerm":"tshirt","timestamp":"2024-12-14T16:20:34.727Z"}
+{"level":"info","message":"Fetched products successfully","response":[{"color":"siyah","name":"koltuk","price":20,"stock":20},{"color":"siyah","name":"koltuk","price":"20","stock":"20"},{"color":"siyah","name":"koltuk","price":"20","stock":"20"},{"color":"siyah","name":"koltuk","price":20,"stock":20}],"timestamp":"2024-12-14T16:20:40.370Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:20:50.046Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:20:50.048Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:20:51.436Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:20:51.439Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:20:52.743Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:21:01.193Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:21:01.195Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:21:02.522Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:21:18.403Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:21:18.406Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:21:19.785Z"}
+{"level":"info","message":"Fetched products successfully","response":[{"color":"siyah","name":"koltuk","price":20,"stock":20},{"color":"siyah","name":"koltuk","price":"20","stock":"20"},{"color":"siyah","name":"koltuk","price":"20","stock":"20"},{"color":"siyah","name":"koltuk","price":20,"stock":20}],"timestamp":"2024-12-14T16:21:30.751Z"}
+{"level":"info","message":"No products found for the search term","searchTerm":"bracelet","timestamp":"2024-12-14T16:21:46.027Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T16:24:11.341Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T16:24:11.343Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T16:24:12.856Z"}
+{"error":"E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"abre.suedaozmen@gmail.com\" }","level":"error","message":"Error creating user","timestamp":"2024-12-14T17:59:23.231Z"}
+{"email":"abre.suedaozmen@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-14T17:59:23.232Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T18:56:43.505Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T18:56:43.507Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T18:56:45.091Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T18:56:49.560Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T18:56:49.562Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T18:56:50.845Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T18:58:42.967Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T18:58:42.969Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T18:58:44.448Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T18:58:56.128Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T18:58:56.131Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T18:58:57.569Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T18:58:57.941Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T18:58:57.943Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T18:58:59.358Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:00:54.074Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:00:54.077Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:00:55.547Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:02:25.090Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:02:25.092Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:02:26.640Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:02:52.720Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:02:52.723Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:02:54.031Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:03:18.252Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:03:18.254Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:03:19.569Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:03:44.084Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:03:44.086Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:03:45.644Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:03:47.321Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:03:47.323Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:03:48.641Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:03:49.552Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:03:49.554Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:03:50.858Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:04:20.864Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:04:20.866Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:04:22.161Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:04:25.225Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:04:25.227Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:04:26.548Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:05:13.419Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:05:13.421Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:05:14.911Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:05:18.049Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:05:18.051Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:05:19.357Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:05:23.757Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:05:23.760Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:05:25.067Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:08:39.027Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:08:39.029Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:08:40.478Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:08:40.480Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:08:41.790Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:13:28.615Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:13:28.617Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:13:30.092Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:13:31.826Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:13:31.828Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:13:33.139Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:13:43.972Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:13:43.974Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:13:45.293Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:13:50.604Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:13:50.606Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:13:51.993Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:14:02.136Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:14:02.139Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:14:03.615Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:19:39.139Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:19:39.141Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:19:40.607Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:23:50.825Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:23:50.827Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:23:52.350Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:25:06.697Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:25:06.699Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:25:08.066Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:25:22.978Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:25:22.980Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:25:24.307Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:25:25.739Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:25:25.741Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:25:27.075Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:25:39.140Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:25:39.142Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:25:40.456Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:25:57.538Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:25:57.540Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:25:58.871Z"}
+{"error":"E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"abre.suedaozmen@gmail.com\" }","level":"error","message":"Error creating user","timestamp":"2024-12-14T19:30:29.449Z"}
+{"email":"abre.suedaozmen@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-14T19:30:29.450Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:37:14.650Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:37:14.652Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:37:16.263Z"}
+{"error":"error is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T19:37:23.756Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:37:59.950Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:37:59.952Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:38:01.275Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:38:11.248Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:38:11.251Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:38:12.796Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:38:12.798Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:38:13.841Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:38:13.843Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:38:15.170Z"}
+{"email":"abre.suedaozmen@gmail.com","level":"error","message":"Duplicate key error - Email already exists","timestamp":"2024-12-14T19:38:18.526Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T19:38:18.527Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T19:53:57.746Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T19:53:57.748Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T19:53:59.210Z"}
+{"email":"abre.suedaozmen@gmail.com","level":"error","message":"Duplicate key error - Email already exists","timestamp":"2024-12-14T19:56:39.408Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T19:56:39.409Z"}
+{"level":"info","message":"User created: abresuedaozmen (abre.suedaozmen11@gmail.com)","timestamp":"2024-12-14T19:56:51.040Z"}
+{"email":"abre.suedaozmen11@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-14T19:56:51.040Z"}
+{"email":"abre.suedaozmen11@gmail.com","level":"error","message":"Duplicate key error - Email already exists","timestamp":"2024-12-14T19:58:08.000Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T19:58:08.002Z"}
+{"error":"user validation failed: username: Path `username` is required.","level":"error","message":"Error creating user","timestamp":"2024-12-14T19:58:27.818Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T19:58:27.818Z"}
+{"error":"user validation failed: email: Path `email` is required.","level":"error","message":"Error creating user","timestamp":"2024-12-14T19:58:42.702Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T19:58:42.702Z"}
+{"error":"user validation failed: email: Please use a valid email address","level":"error","message":"Error creating user","timestamp":"2024-12-14T19:59:45.952Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T19:59:45.952Z"}
+{"level":"info","message":"User created: Eliz Su (eliz@gmail.com)","timestamp":"2024-12-14T20:00:20.446Z"}
+{"email":"eliz@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-14T20:00:20.446Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:02:20.141Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:02:20.143Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:02:21.589Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:02:22.731Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:02:22.733Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:02:24.069Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:02:41.118Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:02:41.120Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:02:42.420Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:02:46.673Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:02:46.675Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:02:47.975Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:02:49.121Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:02:49.124Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:02:50.449Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:02:55.322Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:02:55.324Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:02:56.905Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:02:56.907Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:02:58.205Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:03:10.936Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:03:10.939Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:03:12.270Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:03:12.572Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:03:12.574Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:03:13.903Z"}
+{"level":"warn","message":"Password is required!","timestamp":"2024-12-14T20:03:16.660Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:03:30.980Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:03:30.983Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:03:32.353Z"}
+{"level":"warn","message":"Password is required","timestamp":"2024-12-14T20:03:32.877Z"}
+{"email":"eliz@gmail.com","level":"error","message":"Duplicate key error - Email already exists","timestamp":"2024-12-14T20:03:58.571Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-14T20:03:58.572Z"}
+{"level":"warn","message":"Password is required","timestamp":"2024-12-14T20:04:28.629Z"}
+{"level":"info","message":"User created: Yusuf Yılmaz (yusuf@gmail.com)","timestamp":"2024-12-14T20:04:34.061Z"}
+{"email":"yusuf@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-14T20:04:34.062Z"}
+{"level":"info","message":"Successful login for email: abre.sueda@gmail.com","timestamp":"2024-12-14T20:04:55.583Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-14T20:04:55.583Z"}
+{"level":"warn","message":"Login attempt with missing email or password","timestamp":"2024-12-14T20:05:15.141Z"}
+{"level":"warn","message":"Failed login attempt for email: abre.sueda@gmail.com - Incorrect password","timestamp":"2024-12-14T20:05:23.792Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-14T20:05:23.792Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:13:03.425Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:13:03.427Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:13:04.873Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:14:49.904Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:14:49.906Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:14:51.445Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:14:57.151Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:14:57.153Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:14:58.478Z"}
+{"level":"warn","message":"Failed login attempt for email: abre.sueda@gmail.com - Incorrect password","timestamp":"2024-12-14T20:15:02.913Z"}
+{"level":"error","message":"Error during login attempt for email: abre.sueda@gmail.com - res is not defined","timestamp":"2024-12-14T20:15:02.913Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-14T20:15:02.913Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:15:16.564Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:15:16.567Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:15:17.922Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:15:17.924Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:15:19.324Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:15:20.774Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:15:20.776Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:15:22.171Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:20:07.161Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:20:07.163Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:20:10.675Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:20:11.392Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:20:11.394Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:20:12.772Z"}
+{"level":"warn","message":"Failed login attempt for email: abre.sueda@gmail.com - Incorrect password","timestamp":"2024-12-14T20:20:16.244Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-14T20:20:16.245Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:34:32.469Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:34:32.471Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:34:33.910Z"}
+{"level":"warn","message":"Failed login attempt for email: abre.sueda@gmail.com - Incorrect password","timestamp":"2024-12-14T20:35:04.277Z"}
+{"email":"abre.sueda@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-14T20:35:04.277Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:43:42.886Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:43:42.889Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:43:44.313Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:44:25.979Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:44:25.982Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:44:27.282Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-14T20:44:46.654Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-14T20:44:46.656Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-14T20:44:48.036Z"}
+{"level":"warn","message":"Failed login attempt for email: abre.sueda@gmail.com - Incorrect password","timestamp":"2024-12-14T20:44:52.010Z"}
+{"level":"error","message":"Error during login attempt for email: abre.sueda@gmail.com - 4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","timestamp":"2024-12-15T13:41:06.268Z"}
+{"error":"An error occurred during login","level":"error","message":"Error during user login","timestamp":"2024-12-15T13:41:06.270Z"}
+{"level":"error","message":"Error during login attempt for email: abre.sueda@gmail.com - 4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","timestamp":"2024-12-15T13:41:43.400Z"}
+{"error":"An error occurred during login","level":"error","message":"Error during user login","timestamp":"2024-12-15T13:41:43.402Z"}
+{"level":"error","message":"Error during login attempt for email: abre.sueda@gmail.com - 4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","timestamp":"2024-12-15T13:42:25.762Z"}
+{"error":"An error occurred during login","level":"error","message":"Error during user login","timestamp":"2024-12-15T13:42:25.762Z"}
+{"level":"error","message":"Error during login attempt for email: yusuf@gmail.com - 4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","timestamp":"2024-12-15T13:44:31.331Z"}
+{"error":"An error occurred during login","level":"error","message":"Error during user login","timestamp":"2024-12-15T13:44:31.332Z"}
+{"level":"error","message":"Error during login attempt for email: yusuf@gmail.com - 4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","timestamp":"2024-12-15T13:46:11.304Z"}
+{"error":"An error occurred during login","level":"error","message":"Error during user login","timestamp":"2024-12-15T13:46:11.305Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T13:46:45.195Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T13:46:45.196Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T13:49:22.429Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T13:49:22.429Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T13:54:01.545Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T13:54:01.545Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T13:54:52.842Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T13:54:52.843Z"}
+{"level":"warn","message":"Authentication token is missing","timestamp":"2024-12-15T13:56:10.267Z"}
+{"level":"warn","message":"Authentication token is missing","timestamp":"2024-12-15T13:56:34.624Z"}
+{"level":"warn","message":"Authentication token is missing","timestamp":"2024-12-15T13:57:20.079Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T13:57:58.381Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T13:57:58.381Z"}
+{"level":"warn","message":"Authentication token is missing","timestamp":"2024-12-15T14:01:58.712Z"}
+{"level":"warn","message":"Authentication token is missing","timestamp":"2024-12-15T14:02:00.130Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T14:02:33.942Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T14:02:33.943Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T14:02:51.712Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T14:02:51.713Z"}
+{"error":"4078F4E601000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 80\n","level":"error","message":"Error creating user","timestamp":"2024-12-15T14:03:29.618Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T14:03:29.619Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-15T14:06:04.541Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-15T14:06:04.543Z"}
+{"error":"Operation `users.insertOne()` buffering timed out after 10000ms","level":"error","message":"Error creating user","timestamp":"2024-12-15T14:06:32.321Z"}
+{"error":"res is not defined","level":"error","message":"Error during user registration","timestamp":"2024-12-15T14:06:32.322Z"}
+{"error":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","level":"error","message":"MongoDB connection error","timestamp":"2024-12-15T14:06:34.754Z"}

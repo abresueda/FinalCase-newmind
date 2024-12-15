@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
 const mongooseUser = require("../models/user");
-const logger = require("../utils/logger"); 
+const logger = require("../utils/logger");
 
 async function createUser(userParams) {
   const { username, email, password } = userParams;
@@ -16,8 +16,16 @@ async function createUser(userParams) {
     await newUser.save();
     logger.info(`User created: ${username} (${email})`);
     return true;
-  } catch (e) {
-    logger.error("Error creating user", { error: e.message });
+  } catch (error) {
+    if (error.code === 11000) {
+      logger.error("Duplicate key error - Email already exists", { email });
+      res.status(400).send({ message: "Email already exists" });
+    } else {
+      logger.error("Error creating user", { error: error.message });
+      res
+        .status(500)
+        .send({ message: "An error occurred while creating the user" });
+    }
     return false;
   }
 }
