@@ -5,9 +5,12 @@ const logger = require("../utils/logger");
 const userController = {
   getUser: async (req, res) => {
     try {
-      const response = await userService.getUser(req.params);
+      const response = await userService.getUser(
+        
+        req.params
+        );
       logger.info("User fetched successfully", {
-        params: req.params,
+        params: userId,
         response,
       });
       res.status(200).send({ response });

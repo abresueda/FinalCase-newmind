@@ -5,12 +5,6 @@ const authMiddleware = require("../middleware/auth");
 
 const router = express.Router();
 
-//örnek
-router.post("/korumali", authMiddleware, function test(req, res) {
-  console.log("test");
-  res.status(200).send({ message: "success" });
-});
-
 router.put("/", userController.updateUser);
 router.delete("/:id", authMiddleware, userController.deleteUser);
 router.get("/", authMiddleware, userController.getAllUser);

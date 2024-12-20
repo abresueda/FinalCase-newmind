@@ -14,19 +14,22 @@ async function createUser(userParams) {
     });
 
     await newUser.save();
-    logger.info(`User created: ${username} (${email})`);
-    return true;
+    logger.info(`User created successfully: ${username} (${email})`);
+
+    // Başarı durumunda kullanıcıyı döner
+    return { success: true };
   } catch (error) {
     if (error.code === 11000) {
       logger.error("Duplicate key error - Email already exists", { email });
-      res.status(400).send({ message: "Email already exists" });
+      return { success: false, status: 400, message: "Email already exists" };
     } else {
       logger.error("Error creating user", { error: error.message });
-      res
-        .status(500)
-        .send({ message: "An error occurred while creating the user" });
+      return {
+        success: false,
+        status: 500,
+        message: "An error occurred while creating the user",
+      };
     }
-    return false;
   }
 }
 
@@ -61,7 +64,7 @@ async function getAllUser() {
 
 async function updateUser(userParams) {
   const { id, email } = userParams;
-
+  
   try {
     const user = await mongooseUser.findById(id);
     if (user) {

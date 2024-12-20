@@ -3,7 +3,7 @@ const mongooseUser = require("../models/user");
 const jwt = require("jsonwebtoken");
 const logger = require("../utils/logger");
 
-// Custom Error Classes (isteğe bağlı)
+// Custom Error Classes 
 class UserNotFoundError extends Error {
   constructor(message) {
     super(message);
@@ -26,6 +26,7 @@ async function login(userParams) {
   try {
     // Kullanıcıyı email ile bulalım
     const user = await mongooseUser.findOne({ email });
+
     if (!user) {
       logger.warn(`Failed login attempt for email: ${email}`);
       throw new UserNotFoundError("Invalid username or password");
@@ -42,16 +43,21 @@ async function login(userParams) {
 
     // JWT token oluşturulması
     const token = jwt.sign(
-      { email: user.email, id: user._id, role: user.role },
+      { email: user.email, 
+        id: user._id, 
+        role: user.role },
       process.env.JWT_SECRET,
       {
-        expiresIn: "1h",
+        expiresIn: "7d",
       }
     );
 
-    // Başarılı giriş logu
-    logger.info(`Successful login for email: ${email}`);
-    return { status: 200, message: "Login successful", token };
+    return {
+      status: 200,
+      message: "Login successful",
+      token: token,
+      userId: user._id.toString() // Kullanıcı ID'sini frontend'e gönderiyoruz
+    };
 
   } catch (e) {
     if (e instanceof UserNotFoundError || e instanceof InvalidPasswordError) {

@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors');
 const routes = require("./routes/index");
 const mongoose = require("mongoose");
 const config = require("./config/db");
@@ -10,6 +11,11 @@ const socketIo = require("socket.io");
 require("dotenv").config();
 
 const app = express();
+// CORS'u tüm originler için açma
+app.use(cors({
+  origin: "http://localhost:5173",  // Frontend'in portu
+}));
+
 const server = http.createServer(app);
 const io = socketIo(server);
 
@@ -38,7 +44,7 @@ config.connectDB();
 io.on("connection",(socket) => {
   console.log("Bir kullanıcı bağlandı.");
 
-  socket.on("disconnet", () => {
+  socket.on("disconnect", () => {
     console.log("bir kullanıcı bağlantıyı kesti");
   })
 

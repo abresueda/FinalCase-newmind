@@ -12,13 +12,15 @@ const authController = {
     }
 
     try {
-      // Service'ten gelen yanıtı bekleyelim
+      // Service'ten gelen yanıtı bekliyoruz
       const response = await authService.login(req.body);
 
       if (response.status === 200) {
         // Başarılı giriş
         logger.info("User login successful", { email: req.body.email });
-        res.status(200).send({ message: response.message, token: response.token });
+        res
+          .status(200)
+          .send({ message: response.message, token: response.token });
       } else {
         // Hata durumu
         res.status(response.status).send({ message: response.message });
@@ -31,19 +33,32 @@ const authController = {
   },
 
   register: async (req, res) => {
-    if(!req.body.password){
+    if (!req.body.password) {
       logger.warn("Password is required");
-      return res
-        .status(400)
-        .send({ message: "Password is required!" });
+      return res.status(400).send({ message: "Password is required!" });
     }
+
     try {
+      //Kullanıcı oluşturma isteği
       const response = await userService.createUser(req.body);
+
+      if (response.success === false) {
+        // Hata durumu
+        logger.warn(response.message, { email: req.body.email });
+        return res.status(response.status).send({ message: response.message });
+      }
+      
+      // Başarılı kayıt
       logger.info("User registration successful", { email: req.body.email });
-      res.status(200).send({ response: response });
+      return res.status(201).send({ message: "User registered successfully" });
+      
     } catch (e) {
-      logger.error("Error during user registration", { error: e.message });
-      res.status(500).send({ message: "Internal Server Error" });
+      //Beklenmedik hata mesajı
+      logger.error("Error during user registration", {
+        error: e.message,
+      });
+
+      return res.status(500).send({ message: "Internal Server Error" });
     }
   },
 };
