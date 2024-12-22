@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const cors = require('cors');
 const routes = require("./routes/index");
 const mongoose = require("mongoose");
@@ -15,6 +16,9 @@ const app = express();
 app.use(cors({
   origin: "http://localhost:5173",  // Frontend'in portu
 }));
+
+// Statik dosya servisi
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 const server = http.createServer(app);
 const io = socketIo(server);
@@ -78,9 +82,6 @@ app.get(
 app.use("/api", routes);
 
 //Server
-/*app.listen(3000,() => {
-    console.log('ayaktayiz');
-})*/
 const PORT = process.env.PORT || 3000; // PORT çevresel değişkenden alınır, yoksa 3000 kullanılır
 server.listen(PORT, () => {
   logger.info(`Server is running on port ${PORT}`);

@@ -19,34 +19,49 @@ async function createRedisClient() {
 }
 
 async function getAllProduct() {
-  const key = "showcase";
+  //const key = "showcase";
   try {
-    const client = await createRedisClient();
+    const getAllProduct = await mongooseProduct.find();
+    return getAllProduct.map((product) => ({
+      ...product.toObject(),
+      img: product.img ? `/public/${product.img}` : "/public/default.png",
+    }));
+    /*const client = await createRedisClient();
     const getShowCase = await client.get(key);
 
     if (getShowCase === null) {
       // İlk veritabanından alıyor, sonra cache (Redis) kullanarak daha hızlı işlem yapıyoruz.
       const getAllProduct = await mongooseProduct.find();
-      await client.set(key, JSON.stringify(getAllProduct));
+      if (!getAllProduct.length) {
+        logger.warn("No products found in database.");
+        return [];
+      }
+
+      // Cache'e kaydet ve süre sınırı ekle
+      //await client.set(key, JSON.stringify(getAllProduct), { EX: 3600 });
       logger.info("Fetched all products from database and cached", {
         productsCount: getAllProduct.length,
       });
-      return getAllProduct;
+
+      return getAllProduct.map((product) => ({
+        ...product.toObject(),
+        img: product.img ? `/assets/${product.img}` : "/assets/default.png",
+  // Frontend'deki assets klasöründeki dosya yoluna göre düzenlenir
+      }));
     } else {
       logger.info("Fetched products from Redis cache");
       return JSON.parse(getShowCase);
-    }
+    }*/
   } catch (e) {
     logger.error("Error fetching all products", {
       error: e.message,
       stack: e.stack,
     });
-    return false;
+    return { error: true, message: e.message };
   }
 }
 
-async function getSingleProduct(params) {
-  const id = params.id;
+async function getSingleProduct(id) {
   try {
     const getSingleProduct = await mongooseProduct.findById(id);
     if (!getSingleProduct) {
@@ -66,13 +81,16 @@ async function getSingleProduct(params) {
 }
 
 async function createProduct(params) {
-  const { title, price, color, stock } = params;
+  const { title, price, color, stock, description, category, img } = params;
   try {
     const newProduct = new mongooseProduct({
       title,
       price,
       color,
       stock,
+      description,
+      category,
+      img,
     });
     const savedProduct = await newProduct.save();
     if (savedProduct) {
@@ -143,10 +161,20 @@ async function deleteProduct(params) {
   }
 }
 
+const getProductsByCategory = async (category) => {
+  try {
+    const products = await mongooseProduct.find({ category }); // Kategoriyi MongoDB'de sorgula
+    return products;
+  } catch (error) {
+    throw new Error("Error fetching products by category");
+  }
+};
+
 module.exports = {
   getAllProduct,
   getSingleProduct,
   createProduct,
   updateProduct,
   deleteProduct,
+  getProductsByCategory,
 };

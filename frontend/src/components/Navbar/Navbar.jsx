@@ -1,10 +1,12 @@
-import React from "react";
-import { useNavigate } from 'react-router-dom';
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  
+  const { cartItems } = useContext(CartContext);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light flex-column sticky-top">
       {/* Üst Bar */}
@@ -20,20 +22,36 @@ const Navbar = () => {
         </form>
 
         {/* Orta Taraf: Marka Adı */}
-        <h1 className="text-center m-3 fw-semibold" 
-        style={{ cursor: 'pointer' }} 
-        onClick={() => navigate('/')}>A L A S K A</h1>
+        <h1
+          className="text-center m-3 fw-semibold"
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate("/")}
+        >
+          A L A S K A
+        </h1>
 
         {/* Sağ Taraf: Login İşlemleri */}
         <div className="d-flex">
-          <button className="btn btn-outline-danger me-2" onClick={() => navigate('/login')}>Login</button>
-          <button className="btn btn-outline-danger me-2" onClick={() => navigate('/register')}>
-            <i className="fas fa-user"></i> 
+          <button
+            className="btn btn-outline-danger me-2"
+            onClick={() => navigate("/login")}
+          >
+            Login
           </button>
-          <button className="btn btn-outline-danger">
-          <i className="fa-regular fa-basket-shopping" ></i> 
+          <button
+            className="btn btn-outline-danger me-2"
+            onClick={() => navigate("/register")}
+          >
+            <i className="fas fa-user"></i>
           </button>
-          
+          <button
+            className="btn btn-outline-danger"
+            onClick={() => navigate("/cart")}
+          >
+            <i className="fa-regular fa-basket-shopping "></i>
+
+            <span className="ms-2">({cartItems.length})</span>
+          </button>
         </div>
       </div>
 
@@ -56,32 +74,32 @@ const Navbar = () => {
         <div className="collapse navbar-collapse my-auto" id="navbarNav">
           <ul className="navbar-nav mx-auto w-100 d-flex justify-content-between">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="products/diamond">
                 Pırlanta
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="products/gold">
                 Altın
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="products/glass">
                 Elmas
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="products/ring">
                 Alyans
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="products/man">
                 Erkek
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="products/children">
                 Çocuk
               </Link>
             </li>

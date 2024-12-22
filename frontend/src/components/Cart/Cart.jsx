@@ -1,25 +1,33 @@
-//Sepet Görünümü
-/*import React from 'react';
-import CartItem from './CartItem';
+import React, { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
-const Cart = ({ cartItems, removeItem, updateItemQuantity }) => {
-  const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+const Cart = () => {
+  const { cartItems, removeFromCart, updateQuantity } = useContext(CartContext);
+
+  const handleQuantityChange = (productId, quantity) => {
+    updateQuantity(productId, quantity);
+  };
 
   return (
-    <div className="container mt-5">
-      <h2>Shopping Cart</h2>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty!</p>
-      ) : (
-        cartItems.map((item) => (
-          <CartItem key={item.id} item={item} removeItem={removeItem} updateItemQuantity={updateItemQuantity} />
-        ))
-      )}
-      <div className="mt-3">
-        <h4>Total: ${total}</h4>
-      </div>
+    <div>
+      <h2>Your Cart</h2>
+      {cartItems.map((item) => (
+        <div key={item.id}>
+          <h5>{item.name}</h5>
+          <p>Price: ${item.price}</p>
+          <p>Quantity: {item.quantity}</p>
+          <button onClick={() => removeFromCart(item.id)}>Remove</button>
+          <input
+            type="number"
+            value={item.quantity}
+            onChange={(e) =>
+              handleQuantityChange(item.id, parseInt(e.target.value))
+            }
+          />
+        </div>
+      ))}
     </div>
   );
 };
 
-export default Cart;*/
+export default Cart;

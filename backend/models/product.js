@@ -22,6 +22,18 @@ const productSchema = new mongoose.Schema(
       required: true, // Stok sayısı zorunlu
       min: 0, // Negatif stokları önler
     },
+    description: {
+      type: String,
+      required: false,
+    },
+    category: {
+      type: String,
+      required: false,
+    },
+    img: {
+      type: String,
+      required: false,
+    }
   },
   {
     strict: true
