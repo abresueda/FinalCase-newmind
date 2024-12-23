@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "5c875e11-6e7c-4b81-9a47-8db7f083d5b5",
+		"name": "new-mind",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37033713"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"bag\",\n    \"price\": 50,\n    \"color\": \"sarı\",\n    \"stock\": 50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"675da149b1e836750eb46f04\",\n    \"name\": \"koltuk\",\n    \"price\": \"200\",\n    \"color\": \"mavi\",\n    \"stock\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"6759c8186f28fe8cf530aa0f\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/api/product/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\" : \"675cadaae1ad3274d1093980\",\n    \"email\" : \"abre.sueda11111@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/user/"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:3000/api/user/674a7116a2507d2aca8e4b40"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/api/user"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":\"674c7696d75a86eddda45da9\",\n    \"products\":[\n        {\n        \"name\": \"koltuk\",\n        \"price\": 200,\n        \"color\": \"mavi\",\n        \"stock\": 20\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/order"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basket",
+			"item": [
+				{
+					"name": "Post Basket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product\":{\n        \"productId\":\"6759cb916b36f3f04e37be05\",\n         \"name\": \"şemsiye\",\n         \"price\": 200\n    },\n    \n    \"userId\": \"674c7696d75a86eddda45da9ba\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/basket"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket by UserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/api/basket/674c7696d75a86eddda45da9ba"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"674c7696d75a86eddda45da9ba\",\n    \"productId\": \"6759cb916b36f3f04e37be05\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/basket"
+					},
+					"response": []
+				},
+				{
+					"name": "Clear Basket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"674c7696d75a86eddda45da9ba\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/basket/clear"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "process-payment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Aslı Kerimoğlu\",\n    \"email\": \"asli@gmail.com\",\n    \"password\": \"asli\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "post login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"yusuf@gmail.com\",\n    \"password\": \"yusuf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "kafkaOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:3000/api/user/order"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Product with ElasticSearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/product/search/tshirt"
+			},
+			"response": []
+		},
+		{
+			"name": "Send Message by Socket ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/sendMessage"
+			},
+			"response": []
+		}
+	]
+}

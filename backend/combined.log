@@ -4801,3 +4801,6 @@
 {"email":"abre@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-23T04:37:51.594Z"}
 {"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:37:51.617Z"}
 {"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:37:51.618Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-23T05:56:54.777Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-23T05:56:54.780Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-23T05:56:56.369Z"}
