@@ -16,7 +16,7 @@ const CartSummary = () => {
   };
 
   return (
-    <div className="cart-summary card p-4">
+    <div className="cart-summary card p-4 m-4">
     <h3 className="card-title text-center mb-3">Cart Summary</h3>
     <ul className="list-group list-group-flush">
       <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -28,9 +28,6 @@ const CartSummary = () => {
         <span>${totalPrice.toFixed(2)}</span>
       </li>
     </ul>
-    <div className="text-center mt-3">
-      <button className="btn btn-primary w-100" onClick={handleProceedToCheckout}>Proceed to Checkout</button>
-    </div>
   </div>
   );
 };

@@ -19,14 +19,14 @@ async function createRedisClient() {
 }
 
 async function getAllProduct() {
-  //const key = "showcase";
+  const key = "showcase";
   try {
-    const getAllProduct = await mongooseProduct.find();
+    /*const getAllProduct = await mongooseProduct.find();
     return getAllProduct.map((product) => ({
       ...product.toObject(),
       img: product.img ? `/public/${product.img}` : "/public/default.png",
-    }));
-    /*const client = await createRedisClient();
+    }));*/
+    const client = await createRedisClient();
     const getShowCase = await client.get(key);
 
     if (getShowCase === null) {
@@ -37,21 +37,26 @@ async function getAllProduct() {
         return [];
       }
 
-      // Cache'e kaydet ve süre sınırı ekle
-      //await client.set(key, JSON.stringify(getAllProduct), { EX: 3600 });
+      // Cache'e kaydediyoruz ve süre sınırı ekliyoruz
+      await client.set(key, JSON.stringify(getAllProduct), { EX: 3600 });
       logger.info("Fetched all products from database and cached", {
         productsCount: getAllProduct.length,
       });
 
+      // Veritabanı verilerini frontend'e uygun formatta döndürüyoruz
       return getAllProduct.map((product) => ({
         ...product.toObject(),
-        img: product.img ? `/assets/${product.img}` : "/assets/default.png",
-  // Frontend'deki assets klasöründeki dosya yoluna göre düzenlenir
+        img: product.img ? `/public/${product.img}` : "/public/default.png",
       }));
     } else {
+      // Eğer Redis cache'te veri varsa, cache'ten alıyoruz
       logger.info("Fetched products from Redis cache");
-      return JSON.parse(getShowCase);
-    }*/
+      const cachedProducts = JSON.parse(getShowCase);
+      return cachedProducts.map((product) => ({
+        ...product,
+        img: product.img ? `/public/${product.img}` : "/public/default.png", 
+      }));
+    }
   } catch (e) {
     logger.error("Error fetching all products", {
       error: e.message,

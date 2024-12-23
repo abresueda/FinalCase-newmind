@@ -8,11 +8,9 @@ const ProductList = ({ products }) => {
         <p>No products found</p> // Ürün yoksa mesaj
       ) : (
         products.map((product) => (
-          <div className="col-md-4" >
-            <ProductCard product={product}
-            key={product._id} 
-             /> {/* Her ürünü ProductCard bileşenine geçiriyoruz */}
-
+          <div className="col-md-4">
+            <ProductCard product={product} key={product.id} />{" "}
+            {/* Her ürünü ProductCard bileşenine geçiriyoruz */}
           </div>
         ))
       )}

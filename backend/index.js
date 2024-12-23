@@ -14,14 +14,24 @@ require("dotenv").config();
 const app = express();
 // CORS'u tüm originler için açma
 app.use(cors({
-  origin: "http://localhost:5173",  // Frontend'in portu
+  origin: "http://localhost:5173", 
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
 }));
 
 // Statik dosya servisi
 app.use("/public", express.static(path.join(__dirname, "public")));
 
 const server = http.createServer(app);
-const io = socketIo(server);
+
+// Socket.io için CORS ayarı
+const io = socketIo(server, {
+  cors: {
+    origin: "http://localhost:5173", 
+    methods: ["GET", "POST"], // İzin verilen HTTP metodları
+    credentials: true, // Çerez paylaşımına izin ver
+  },
+});
 
 //Middleware
 app.use(express.json());
@@ -32,7 +42,6 @@ app.use(
 );
 
 //Log Http Request
-//BUNU NEDEN YAZDIK DÜZENLE
 app.use((req,res,next) => {
   logger.http(`${req.method} - ${req.url}`);
   next();
@@ -46,13 +55,20 @@ config.connectDB();
 
 //Socket Bağlantısı
 io.on("connection",(socket) => {
-  console.log("Bir kullanıcı bağlandı.");
+  logger.info("A user connected");
+
+  // Ödeme işlemi başarılı olduğunda frontend'e bildirim gönder
+  socket.on("paymentSuccess", () => {
+    socket.emit("message", {
+      title: "Payment Successful",
+      description: "Your payment was processed successfully.",
+    });
+  });
 
   socket.on("disconnect", () => {
-    console.log("bir kullanıcı bağlantıyı kesti");
+    logger.info("A user disconnected");
   })
 
-  io.emit("message", "mesaj test")
 })
 
 app.get("/sendMessage",(req,res) => {

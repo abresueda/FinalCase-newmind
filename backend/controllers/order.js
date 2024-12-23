@@ -22,7 +22,6 @@ const orderController = {
       return res.status(400).send({ message: validationError });
     }
 
-  
     try {
       const response = await orderService.createOrder(req.body);
       logger.info("Order created successfully", { userId });
@@ -50,7 +49,11 @@ const orderController = {
       res.status(200).send({ response });
     } catch (error) {
       logger.error("Error updating order", { userId, error: error.message });
-      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+      res
+        .status(500)
+        .send({
+          message: "An unexpected error occurred. Please try again later.",
+        });
     }
   },
 
@@ -69,7 +72,11 @@ const orderController = {
       res.status(200).send({ response });
     } catch (error) {
       logger.error("Error deleting order", { id, error: error.message });
-      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+      res
+        .status(500)
+        .send({
+          message: "An unexpected error occurred. Please try again later.",
+        });
     }
   },
 
@@ -80,7 +87,11 @@ const orderController = {
       res.status(200).send({ response });
     } catch (error) {
       logger.error("Error fetching all orders", { error: error.message });
-      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+      res
+        .status(500)
+        .send({
+          message: "An unexpected error occurred. Please try again later.",
+        });
     }
   },
 
@@ -99,7 +110,11 @@ const orderController = {
       res.status(200).send({ response });
     } catch (error) {
       logger.error("Error fetching single order", { id, error: error.message });
-      res.status(500).send({ message: "An unexpected error occurred. Please try again later." });
+      res
+        .status(500)
+        .send({
+          message: "An unexpected error occurred. Please try again later.",
+        });
     }
   },
 };

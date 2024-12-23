@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios"; // Axios importu eklenmeli
-import { Pagination, Card, Button, Row, Col } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 import Hero from "../components/Hero/Hero";
 
 function HomePage() {
@@ -33,20 +33,25 @@ function HomePage() {
   // Sayfada gösterilecek ürünleri filtrele
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
 
   // Pagination (otomatik)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPage((prevPage) => {
-        const nextPage = prevPage === Math.ceil(products.length / productsPerPage) ? 1 : prevPage + 1;
+        const nextPage =
+          prevPage === Math.ceil(products.length / productsPerPage)
+            ? 1
+            : prevPage + 1;
         return nextPage;
       });
-    }, 3000); // 5 saniyede bir sayfa geçişi yapılacak
+    }, 3000); // 3 saniyede bir sayfa geçişi yapılacak
 
     return () => clearInterval(interval); // Cleanup
   }, [products]);
-
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
@@ -64,9 +69,12 @@ function HomePage() {
         {currentProducts.map((product) => (
           <Col md={3} key={product._id} className="mb-4">
             <Card>
-              <Card.Img variant="top" src={`http://localhost:3000${product.img}`} />
+              <Card.Img
+                variant="top"
+                src={`http://localhost:3000${product.img}`}
+              />
               <Card.Body>
-                <Card.Title>{product.description}</Card.Title>  
+                <Card.Title>{product.description}</Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -75,6 +83,5 @@ function HomePage() {
     </div>
   );
 }
-
 
 export default HomePage;

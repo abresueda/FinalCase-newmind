@@ -47,19 +47,20 @@ async function createOrder(params) {
 
   try {
     const newOrder = new mongooseOrder({
-      userId, // UserID, ObjectId olarak geliyor ve User koleksiyonuna referans.
-      products, // Ürünler, Object olarak kaydediliyor.
+      userId, 
+      products,
     });
 
     const savedOrder = await newOrder.save();
+
     if (savedOrder) {
       logger.info("Order created successfully", {
         orderId: savedOrder._id,
         userId,
       });
-      kafka.sendMessage("order", `orderId:${savedOrder.id}`);
-      logger.info("Kafka message sent for order", { orderId: savedOrder._id });
-      return true;
+      //kafka.sendMessage("order", `orderId:${savedOrder.id}`);
+      //logger.info("Kafka message sent for order", { orderId: savedOrder._id });
+      return savedOrder;
     } else {
       logger.warn("Order creation failed", { userId });
       return false;

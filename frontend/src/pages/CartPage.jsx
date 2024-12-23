@@ -26,6 +26,47 @@ const CartPage = () => {
     navigate("/products");
   };
 
+  //Kullanıcının ödeme kısmına geçebilmesi için.
+  const handleCheckout = async () => {
+    const userId = localStorage.getItem("userId");
+
+    if (!userId) {
+      console.error("User is not logged in");
+      return; // Kullanıcı giriş yapmamışsa işlemi durdur
+    }
+
+    try {
+      const orderData = {
+        userId: userId,
+        products: cartItems.map((item) => ({
+          name: item.description, // Ürün adı
+          price: item.price, // Ürün fiyatı
+          color: item.color, // Ürün rengi
+          stock: item.stock, // Ürün stoğu
+        })),
+      };
+
+      const response = await fetch("http://localhost:3000/api/order", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(orderData),
+      });
+
+      const data = await response.json();
+
+      if (data && data.response && data.response._id) {
+        // Sipariş başarılı bir şekilde oluşturulduysa checkout sayfasına yönlendir
+        navigate(`/checkout/${data.response._id}`);
+      } else {
+        console.error("Order creation failed", data);
+      }
+    } catch (error) {
+      console.error("Error during order creation:", error);
+    }
+  };
+
   return (
     <div className="cart-page">
       <div className="text-center mt-3">
@@ -86,6 +127,15 @@ const CartPage = () => {
           </div>
 
           <CartSummary />
+          <div className="d-flex justify-content-center align-items-center">
+            <button
+              className="btn btn-primary text-center mt-3 m-2"
+              onClick={handleCheckout}
+              disabled={cartItems.length === 0}
+            >
+              Proceed to Checkout
+            </button>
+          </div>
         </>
       )}
     </div>
