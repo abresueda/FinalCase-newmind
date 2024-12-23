@@ -4757,3 +4757,47 @@
 {"category":"diamond","level":"info","message":"Fetched products by category successfully","response":[{"__v":0,"_id":"6765b909e2d8212cf475633b","category":"diamond","color":"Beyaz","description":"0.05 Karat Pırlanta Venüs Tektaş Yüzük","img":"diamond1.jpg.webp","price":250,"stock":50},{"__v":0,"_id":"6765bcb211822ab4073e3b57","category":"diamond","color":"Beyaz","description":"0.30 Karat Pırlanta Tektaş Yüzük","img":"diamond2.jpg.webp","price":400,"stock":80},{"__v":0,"_id":"6765bf3911822ab4073e3b6f","category":"diamond","color":"Beyaz","description":"1.20 Karat Baget Pırlanta Yüzük","img":"diamond5.jpg.webp","price":800,"stock":80},{"__v":0,"_id":"6765bfb411822ab4073e3b73","category":"diamond","color":"Beyaz","description":"0.11 Karat Pırlanta Baget Yüzük","img":"diamond4.jpg.webp","price":200,"stock":80},{"__v":0,"_id":"6765bfe611822ab4073e3b75","category":"diamond","color":"Beyaz","description":"0.75 Karat Pırlanta Tektaş Yüzük","img":"diamond3.jpg.webp","price":600,"stock":80}],"timestamp":"2024-12-23T04:08:48.318Z"}
 {"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:10:03.356Z"}
 {"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:10:03.356Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-23T04:12:37.305Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-23T04:12:37.307Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-23T04:12:39.045Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-23T04:12:51.568Z"}
+{"level":"info","message":"Connected to Redis","timestamp":"2024-12-23T04:12:51.571Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-12-23T04:12:53.006Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:31:37.890Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:31:37.890Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:31:39.727Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:31:39.727Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:31:46.167Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:31:46.168Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:31:47.769Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:31:47.769Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:32:40.617Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:32:40.617Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:32:57.544Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:32:57.545Z"}
+{"level":"info","message":"Order created successfully","orderId":"6768e83e126515c8f9388a0f","timestamp":"2024-12-23T04:34:07.892Z","userId":"6764d2cca63d429e97d93143"}
+{"level":"info","message":"Order created successfully","timestamp":"2024-12-23T04:34:07.893Z","userId":"6764d2cca63d429e97d93143"}
+{"level":"info","message":"A user connected","timestamp":"2024-12-23T04:34:07.923Z"}
+{"level":"info","message":"A user disconnected","timestamp":"2024-12-23T04:35:26.779Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:35:26.843Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:35:26.844Z"}
+{"level":"info","message":"Order created successfully","orderId":"6768e8b4126515c8f9388a11","timestamp":"2024-12-23T04:36:04.754Z","userId":"6764d2cca63d429e97d93143"}
+{"level":"info","message":"Order created successfully","timestamp":"2024-12-23T04:36:04.755Z","userId":"6764d2cca63d429e97d93143"}
+{"level":"info","message":"A user connected","timestamp":"2024-12-23T04:36:04.784Z"}
+{"amount":1450,"level":"info","message":"Payment created successfully","orderId":"6768e8b4126515c8f9388a11","paymentId":"6768e8c5126515c8f9388a15","timestamp":"2024-12-23T04:36:21.389Z"}
+{"amount":1450,"level":"info","message":"Payment created successfully","orderId":"6768e8b4126515c8f9388a11","paymentId":"6768e8c5126515c8f9388a15","timestamp":"2024-12-23T04:36:21.389Z"}
+{"level":"info","message":"A user disconnected","timestamp":"2024-12-23T04:36:29.241Z"}
+{"email":"yusuf@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-23T04:36:44.691Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:36:44.716Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:36:44.716Z"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-23T04:36:58.271Z","userId":"6764d2cca63d429e97d93143"}
+{"level":"info","message":"Received Token:","timestamp":"2024-12-23T04:36:58.271Z"}
+{"level":"info","message":"Users retrieved: 2 users","timestamp":"2024-12-23T04:36:58.423Z"}
+{"level":"info","message":"Users fetched successfully","response":[{"__v":0,"_id":"6761cf239e8e1218c6715a68","createdAt":"2024-12-17T19:21:07.940Z","email":"asli@gmail.com","password":"$2b$10$WZzyxz/atQT/6HAKr6suoeND9H3msXYerxUEsS9GCf6ypSkmgUUKi","username":"Aslı Kerimoğlu"},{"__v":0,"_id":"6764d2cca63d429e97d93143","createdAt":"2024-12-20T02:13:32.116Z","email":"yusuf@gmail.com","password":"$2b$10$ve9v7HBJB9iP/wlPFSogEuQktouGlQ1CUVSkBauoQ78icDD9flW3K","username":"Yusuf"}],"timestamp":"2024-12-23T04:36:58.424Z"}
+{"level":"info","message":"User updated: Yusuf (yusuf1@gmail.com)","timestamp":"2024-12-23T04:37:11.421Z"}
+{"level":"info","message":"User updated successfully","requestBody":{"email":"yusuf1@gmail.com","id":"6764d2cca63d429e97d93143","password":"yusuf"},"response":{"__v":0,"_id":"6764d2cca63d429e97d93143","createdAt":"2024-12-20T02:13:32.116Z","email":"yusuf1@gmail.com","password":"$2b$10$ve9v7HBJB9iP/wlPFSogEuQktouGlQ1CUVSkBauoQ78icDD9flW3K","username":"Yusuf"},"timestamp":"2024-12-23T04:37:11.421Z"}
+{"level":"info","message":"User created successfully: abre (abre@gmail.com)","timestamp":"2024-12-23T04:37:37.478Z"}
+{"email":"abre@gmail.com","level":"info","message":"User registration successful","timestamp":"2024-12-23T04:37:37.479Z"}
+{"email":"abre@gmail.com","level":"info","message":"User login successful","timestamp":"2024-12-23T04:37:51.594Z"}
+{"level":"info","message":"Fetched products from Redis cache","timestamp":"2024-12-23T04:37:51.617Z"}
+{"level":"info","message":"Fetched all products successfully","timestamp":"2024-12-23T04:37:51.618Z"}

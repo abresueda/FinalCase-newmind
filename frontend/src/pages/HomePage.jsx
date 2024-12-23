@@ -48,7 +48,7 @@ function HomePage() {
             : prevPage + 1;
         return nextPage;
       });
-    }, 3000); // 3 saniyede bir sayfa geçişi yapılacak
+    }, 6000); // 6 saniyede bir sayfa geçişi yapılacak
 
     return () => clearInterval(interval); // Cleanup
   }, [products]);

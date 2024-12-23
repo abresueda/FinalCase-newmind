@@ -21,11 +21,6 @@ async function createRedisClient() {
 async function getAllProduct() {
   const key = "showcase";
   try {
-    /*const getAllProduct = await mongooseProduct.find();
-    return getAllProduct.map((product) => ({
-      ...product.toObject(),
-      img: product.img ? `/public/${product.img}` : "/public/default.png",
-    }));*/
     const client = await createRedisClient();
     const getShowCase = await client.get(key);
 
@@ -54,7 +49,7 @@ async function getAllProduct() {
       const cachedProducts = JSON.parse(getShowCase);
       return cachedProducts.map((product) => ({
         ...product,
-        img: product.img ? `/public/${product.img}` : "/public/default.png", 
+        img: product.img ? `/public/${product.img}` : "/public/default.png",
       }));
     }
   } catch (e) {
